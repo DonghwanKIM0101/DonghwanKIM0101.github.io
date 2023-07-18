@@ -7,3 +7,29 @@
 #   first_name: Ricardo
 #   last_name: Martin-Brualla
 #   website: https://ricardomartinbrualla.com
+
+donghwan:
+    first_name: Donghwan
+    last_name: Kim
+    website: https://donghwankim0101.github.io/
+    is_me: true
+
+tkkim:
+    first_name: Tae-Kyun (T-K)
+    last_name: Kim
+    website: https://sites.google.com/view/tkkim/
+
+jyunlee:
+    first_name: Jihyun
+    last_name: Lee
+    website: https://jyunlee.github.io/
+
+junbong:
+    first_name: Junbong
+    last_name: Jang
+    website: https://junbongjang.github.io/
+
+mhsung:
+    first_name: Minhyuk
+    last_name: Sung
+    website: https://mhsung.github.io/
