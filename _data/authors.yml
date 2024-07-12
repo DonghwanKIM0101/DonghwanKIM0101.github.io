@@ -33,3 +33,37 @@ mhsung:
     first_name: Minhyuk
     last_name: Sung
     website: https://mhsung.github.io/
+
+wjcho:
+    first_name: Woojin
+    last_name: Cho
+
+mjyi:
+    first_name: Minjae
+    last_name: Yi
+
+mjkim:
+    first_name: Minje
+    last_name: Kim
+    website: https://yunminjin2.github.io/
+
+tywoo:
+    first_name: Taeyun
+    last_name: Woo
+
+twha:
+    first_name: Taewook
+    last_name: Ha
+
+hklee:
+    first_name: Hyokeun
+    last_name: Lee
+
+jhryu:
+    first_name: Je-Hwan
+    last_name: Ryu
+
+wtwoo:
+    first_name: Woontack
+    last_name: Woo
+    website: https://uvrlab.org/

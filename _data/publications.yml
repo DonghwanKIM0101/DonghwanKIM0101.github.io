@@ -18,6 +18,32 @@
 #   awards:
 #     - "Oral Presentation"
 
+- id: mhcdiff
+  title: "Multi-hypotheses Conditioned Point Cloud Diffusion for 3D Human Reconstruction from Occluded Images"
+  venue: Preprint
+  image: mhcdiff.png
+  authors:
+      - donghwan
+      - tkkim
+
+- id: graspnet
+  title: "Dense Hand-Object(HO) GraspNet with Full Grasping Taxonomy and Dynamics"
+  venue: ECCV, 2024
+  project_page: "https://hograspnet2024.github.io/"
+  image: graspnet.png
+  authors:
+      - wjcho
+      - jyunlee
+      - mjyi
+      - mjkim
+      - tywoo
+      - donghwan
+      - twha
+      - hklee
+      - jhryu
+      - wtwoo
+      - tkkim
+
 - id: fourier
   title: "FourierHandFlow: Neural 4D Hand Representation Using Fourier Query Flow"
   venue: NerIPS, 2023
