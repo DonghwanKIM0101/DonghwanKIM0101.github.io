@@ -48,7 +48,7 @@
 
 - id: fourier
   title: "FourierHandFlow: Neural 4D Hand Representation Using Fourier Query Flow"
-  venue: NerIPS, 2023
+  venue: NeurIPS, 2023
   project_page: "https://jyunlee.github.io/projects/fourier-hand-flow/"
   arxiv: "2307.08100"
   image: FourierHandFlow.png
