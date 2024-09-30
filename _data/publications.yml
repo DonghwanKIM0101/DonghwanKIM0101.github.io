@@ -18,13 +18,15 @@
 #   awards:
 #     - "Oral Presentation"
 
-# - id: mhcdiff
-#   title: "Multi-hypotheses Conditioned Point Cloud Diffusion for 3D Human Reconstruction from Occluded Images"
-#   venue: Preprint
-#   image: mhcdiff.png
-#   authors:
-#       - donghwan
-#       - tkkim
+- id: mhcdiff
+  title: "Multi-hypotheses Conditioned Point Cloud Diffusion for 3D Human Reconstruction from Occluded Images"
+  venue: NeurIPS, 2024
+  project_page: "https://DonghwanKIM0101.github.io/projects/mhcdiff/"
+  arxiv: "2409.18364"
+  image: mhcdiff.png
+  authors:
+      - donghwan
+      - tkkim
 
 - id: graspnet
   title: "Dense Hand-Object(HO) GraspNet with Full Grasping Taxonomy and Dynamics"
