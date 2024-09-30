@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="MHCDIFF"/>
+  <meta property="og:description" content="Multi-hypotheses Conditioned Point Cloud Diffusion for 3D Human Reconstruction from Occluded Images (NeurIPS 2024)"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="MHCDIFF">
+  <meta name="twitter:description" content="Multi-hypotheses Conditioned Point Cloud Diffusion for 3D Human Reconstruction from Occluded Images (NeurIPS 2024)">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>MHCDIFF</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Multi-hypotheses Conditioned Point Cloud Diffusion for 3D Human Reconstruction from Occluded Images</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://donghwankim0101.github.io/" target="_blank">Donghwan Kim</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://sites.google.com/view/tkkim/" target="_blank">Tae-Kyun (T-K) Kim</a><sup>1, 2</sup></span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">KAIST<sup>1</sup>, Imperial College London<sup>2</sup><br><b>NeurIPS 2024</b></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2409.18364.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/DonghwanKIM0101/MHCDIFF" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2409.18364" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/teaser.png" alt="MY ALT TEXT"/>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        <b>MHCDIFF</b> reconstructs 3D human shapes as point clouds from the segmented images, containing occlusion due to interaction.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            3D human shape reconstruction under severe occlusion due to human-object or human-human interaction is a challenging problem. Parametric models i.e. SMPL(- X), which are based on the statistics across human shapes, can represent whole human body shapes but are limited to minimally-clothed human shapes. Implicit- function-based methods extract features from the parametric models to employ prior knowledge of human bodies and can capture geometric details such as clothing and hair. However, they often struggle to handle misaligned parametric models and inpaint occluded regions given a single RGB image. In this work, we propose a novel pipeline, MHCDIFF, Multi-hypotheses Conditioned Point Cloud Diffusion, composed of point cloud diffusion conditioned on probabilistic distributions for pixel-aligned detailed 3D human reconstruction under occlusion. Compared to previous implicit-function-based methods, the point cloud diffusion model can capture the global consistent features to generate the occluded regions, and the denoising process corrects the misaligned SMPL meshes. The core of MHCDIFF is extracting local features from multiple hypothesized SMPL(-X) meshes and aggregating the set of features to condition the diffusion model. In the experiments on CAPE and MultiHuman datasets, the proposed method outperforms various SOTA methods based on SMPL, implicit functions, point cloud diffusion, and their combined, under synthetic and real occlusions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="item" style="margin-top:40px;">
+          <!-- Your image here -->
+          <img src="static/images/in_the_wild.png" alt="MY ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          From in-the-wild images, <b>MHCDIFF</b> reconstructs loose clothes (the rightmost image) robustly on the occlusion (two images on the left).
+        </h2>
+      </div>
+    </div>
+  </section>
+<!-- Image carousel -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="item" style="margin-top:40px;">
+          <!-- Your image here -->
+          <img src="static/images/cape_qualitative.png" alt="MY ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          We evaluate <b>MHCDIFF</b> with SMPL estimation method and implicit-function-based methods on CAPE dataset. <b>MHCDIFF</b> is robust to the occlusion and misalignment, and can capture pixel-aligned details.
+        </h2>
+      </div>
+    </div>
+  </section>
+<!-- Image carousel -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="item" style="margin-top:40px;">
+          <!-- Your image here -->
+          <img src="static/images/multi_qualitative.png" alt="MY ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          Qualitative results on MultiHuman dataset.
+        </h2>
+      </div>
+    </div>
+  </section>
+<!-- Image carousel -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="item" style="margin-top:40px;">
+          <!-- Your image here -->
+          <img src="static/images/hi4d_qualitative.png" alt="MY ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+            Qualitative results on Hi4D dataset.
+        </h2>
+      </div>
+    </div>
+  </section>
+<!-- Image carousel -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="item" style="margin-top:40px;">
+          <!-- Your image here -->
+          <img src="static/images/overview.png" alt="MY ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+            We introduce a novel multi-hypotheses conditioning mechanism that effectively captures the distribution of multiple plausible SMPL meshes. It is robust to the noise of each SMPL estimation due to the occlusion of given images. Unlike the previous implicit function, we adopt point cloud diffusion model to capture the global consistent features and inpaint the invisible parts.
+        </h2>
+      </div>
+    </div>
+  </section>
+<!-- Image carousel -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        @InProceedings{mhcdiff2024,
+            author = {Kim, Donghwan and Kim, Tae-Kyun},
+            title = {Multi-hypotheses Conditioned Point Cloud Diffusion for 3D Human Reconstruction from Occluded Image},
+            booktitle = {NeurIPS},
+            year = {2024}
+        }
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
