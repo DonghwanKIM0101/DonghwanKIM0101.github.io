@@ -1,19 +1,21 @@
 - company: PLUME.D
   description: >-
       Part time Researcher on the <a href="https://www.plumed.kr">PLUME.D</a>.
-  dates: "Feb 2023 - Current"
+      Improved generalization of 2D-to-3D pose uplifting with training on synthetic random camera projection.
+      Implemented video-based SMPL-X estimation pipeline with diffusion models.
+  dates: "Feb. 2023 - Dec. 2024"
   location: Seoul, Korea
 
 - company: PLUME.D
   description: >-
       Unity Developer on the <a href="https://www.plumed.kr">PLUME.D</a>. 
       Implemented avatar rendering from 2.5D human body joints with single web cam in real-time.
-  dates: "Feb 2022 - Feb 2023"
+  dates: "Jan. 2022 - Feb. 2023"
   location: Seoul, Korea
 
 - company: NCSOFT
   description: >-
       Research Intern on the Human pose team in Vision AI Lab.
       Implemented GUI tool for multi-view camera calibration and multi-view camera capture.
-  dates: "Mar 2021 - Aug 2021"
+  dates: "Mar. 2021 - Aug. 2021"
   location: Seongnam, Korea
