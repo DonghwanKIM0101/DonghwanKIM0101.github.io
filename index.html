@@ -91,6 +91,23 @@ layout: null
   <section class="section">
     <div class="container is-max-desktop">
 
+      <h2 class="title is-3">Education</h2>
+      <div class="content">
+        <ul>
+            {% for school in site.data.education %}
+            <div class="columns">
+              <div class="column is-four-fifths">
+                <b>{{ school.name }}</b><br />
+                {{ school.description }}
+              </div>
+              <div class="column is-one-fifths has-text-right">
+                {{ school.dates }}
+              </div>
+            </div>
+            {% endfor %}
+        </ul>
+      </div>
+
       <h2 class="title is-3">News</h2>
       <div class="content">
         <ul>
@@ -142,6 +159,7 @@ layout: null
                 <span class="publication-venue-emph">{{ award }}<span>
               {% endfor %}
             </div>
+            {% if publication.arxiv %}
             <p class="publication-description">{{ publication.description }}</p>
             <!-- Publication Links. -->
             <div class="publication-links buttons field has-addons">
@@ -164,11 +182,32 @@ layout: null
               </a>
               {% endif %}
             </div>
+            {% endif %}
             <!--/ Publication Links. -->
           </div>
         </div>
       </div>
       {% endfor %}
+
+      <h2 class="title is-3">Employment</h2>
+      <div class="content">
+        <ul>
+            {% for job in site.data.employment %}
+            <div class="columns">
+              <div class="column is-four-fifths">
+                <b>{{ job.company }}</b><br />
+                {{ job.description }}
+              </div>
+              <div class="column is-one-fifths has-text-right">
+                {{ job.dates }}
+                <br />
+                {{ job.location }}
+              </div>
+            </div>
+            {% endfor %}    
+        </ul>
+      </div>
+
     </div>
   </section>
 

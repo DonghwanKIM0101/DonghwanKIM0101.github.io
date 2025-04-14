@@ -18,6 +18,14 @@
 #   awards:
 #     - "Oral Presentation"
 
+- id: LieHMR
+  title: "[Cofidential] Research about human mesh recovery/generation"
+  venue: ICCV, 2025 (Under review)
+  image: underreview.png
+  authors:
+      - donghwan
+      - tkkim
+
 - id: mhcdiff
   title: "Multi-hypotheses Conditioned Point Cloud Diffusion for 3D Human Reconstruction from Occluded Images"
   venue: NeurIPS, 2024
@@ -32,6 +40,7 @@
   title: "Dense Hand-Object(HO) GraspNet with Full Grasping Taxonomy and Dynamics"
   venue: ECCV, 2024
   project_page: "https://hograspnet2024.github.io/"
+  arxiv: "2409.04033"
   image: graspnet.png
   authors:
       - wjcho

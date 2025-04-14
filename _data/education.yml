@@ -1,7 +1,12 @@
 - name: KAIST
   description: >-
+      Ph.D. student in Computer Science, advised by <a href="https://sites.google.com/view/tkkim/">Prof. Tae-Kyun (T-K) Kim</a>.
+  dates: Spring 2025 - Current
+
+- name: KAIST
+  description: >-
       M.S. in Computer Science, advised by <a href="https://sites.google.com/view/tkkim/">Prof. Tae-Kyun (T-K) Kim</a>.
-  dates: Spring 2023 - Current
+  dates: Spring 2023 - Spring 2025
 
 - name: KAIST
   description: >-
